@@ -1,0 +1,36 @@
+#menubar {
+  //   width: 970px;
+  height: 62px !important;
+  //   left: 195px;
+  top: 44px;
+
+  background: #ffffff !important;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.08) !important;
+  border-radius: 12px !important;
+
+  #menubar .imglogo {
+    width: 106px;
+    height: 30px;
+  }
+
+  .menuitems li a:hover {
+    border-bottom: #2959c8 solid 1px;
+    // box-sizing: border-box;
+  }
+
+  .menuitems li a {
+    padding: 18px !important;
+    border-bottom: #ffffff solid 1px;
+  }
+
+  .loginLink {
+    margin-right: 45px;
+    color: #2959c8;
+  }
+  .registerLink {
+    background: #2959c8;
+    border-radius: 12px;
+    color: #ffffff;
+    padding: 7px 24px;
+  }
+}
