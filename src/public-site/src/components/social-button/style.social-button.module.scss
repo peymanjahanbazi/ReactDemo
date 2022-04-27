@@ -1,0 +1,36 @@
+$textColor:#191919;
+
+.socialButton {
+
+
+    border: 1px solid #DEE3E8;
+    box-sizing: border-box;
+    border-radius: 12px;
+    padding: 20px 10px 20px 8px;
+    margin: 0px;
+    width: fit-content;
+    height: 36px;
+    display: flex;
+
+    a {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        text-decoration: none;
+        width: 100%;
+        color: $textColor;
+        font-size: 14px;
+        line-height: 21px;
+
+        img {
+            width: 22px;
+            height: 22px;
+            margin: 5px;
+        }
+
+        div {
+            width: fit-content;
+        }
+    }
+
+}
