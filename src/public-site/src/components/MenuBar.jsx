@@ -1,7 +1,18 @@
 import "./MenuBar.scss";
 import logo from "./logo.svg";
+import { useState } from "react";
 
 function MenuBar() {
+  let [collapsed, setCollapsed] = useState("");
+
+  const handleCollapse = () => {
+    if (collapsed === "") {
+      setCollapsed("show");
+    } else {
+      setCollapsed("");
+    }
+  };
+  const className = `collapse navbar-collapse ${collapsed}`;
   const menyItems = [
     { text: "Home", href: "" },
     { text: "What is ID", href: "" },
@@ -22,7 +33,19 @@ function MenuBar() {
         <a className="navbar-brand" href="#">
           <img src={logo} className="imglogo" />
         </a>
-        <div className="collapse navbar-collapse" id="navbarContent">
+        <button
+          className="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+          onClick={handleCollapse}
+        >
+          <span className="navbar-toggler-icon"></span>
+        </button>
+        <div className={className} id="navbarContent">
           <ul className=" menuitems navbar-nav me-auto mb-2 mb-lg-0">
             {menuItemsHtml}
           </ul>
