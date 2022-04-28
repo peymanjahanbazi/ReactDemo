@@ -1,11 +1,15 @@
+import Helmet from "react-helmet";
+
 import Footer from "../../components/Footer";
 import MenuBar from "../../components/MenuBar";
 
-function Main({ children }) {
+function Main({ children, title }) {
   return (
     <div className="container">
+      <Helmet>
+        <title>{title}</title>
+      </Helmet>
       <MenuBar />
-      {children}
       {children}
       <Footer />
     </div>

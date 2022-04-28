@@ -2,7 +2,7 @@ import Main from "./templates/Main";
 
 function Home() {
   return (
-    <Main>
+    <Main title="Home page">
       <div>salam</div>
     </Main>
   );

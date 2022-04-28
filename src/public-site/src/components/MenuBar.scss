@@ -1,9 +1,8 @@
-#menubar {
-  //   width: 970px;
-  height: 62px !important;
-  //   left: 195px;
+#menubarparent {
   top: 44px;
-
+}
+#menubar {
+  height: 62px !important;
   background: #ffffff !important;
   box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.08) !important;
   border-radius: 12px !important;
