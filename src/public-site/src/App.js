@@ -9,6 +9,7 @@ import FAQ from "./pages/FAQ";
 import CreateAccount from "./pages/CreateAccount";
 import Login from "./pages/Login";
 import LoginCode from "./pages/LoginCode";
+import WhatIsId from "./pages/WhatIsId";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<AboutUs />} />
+          <Route path="/whatisid" element={<WhatIsId />} />
           <Route path="/faq" element={<FAQ />} />
           <Route path="/login" element={<Login />} />
           <Route path="/loginCode" element={<LoginCode />} />
