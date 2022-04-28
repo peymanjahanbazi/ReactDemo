@@ -1,5 +1,10 @@
+import Main from "./templates/Main";
 function Login() {
-  return <div>login</div>;
+  return (
+    <Main title="Login">
+      <div>Login page</div>
+    </Main>
+  );
 }
 
 export default Login;

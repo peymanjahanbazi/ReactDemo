@@ -15,7 +15,7 @@ function MenuBar() {
   };
   const className = `collapse navbar-collapse ${collapsed}`;
   const menyItems = [
-    { text: "Home", href: "/home" },
+    { text: "Home", href: "/" },
     { text: "What is ID", href: "/whatisid" },
     { text: "About us", href: "/about" },
     { text: "Contact us", href: "/contact" },
@@ -23,9 +23,6 @@ function MenuBar() {
   ];
   const menuItemsHtml = menyItems.map((x) => (
     <li key={x.text} className="nav-item">
-      {/* <a className="nav-link active" href={x.href}>
-        {x.text}
-      </a> */}
       <Link to={x.href} className="nav-link active">
         {x.text}
       </Link>
@@ -59,9 +56,9 @@ function MenuBar() {
             </ul>
             <ul className="navbar-nav">
               <li className="nav-item">
-                <a className=" loginLink nav-link" href="#">
+                <Link className=" loginLink nav-link" to="/login">
                   Login
-                </a>
+                </Link>
               </li>
               <li className="nav-item">
                 <a className=" registerLink nav-link" href="#">

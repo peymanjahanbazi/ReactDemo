@@ -1,4 +1,4 @@
-import Helmet from "react-helmet";
+import { Helmet, HelmetProvider } from "react-helmet-async";
 
 import Footer from "../../components/Footer";
 import MenuBar from "../../components/MenuBar";
@@ -6,9 +6,11 @@ import MenuBar from "../../components/MenuBar";
 function Main({ children, title }) {
   return (
     <div className="container">
-      <Helmet>
-        <title>{title}</title>
-      </Helmet>
+      <HelmetProvider>
+        <Helmet>
+          <title>{title ? title : "No title"}</title>
+        </Helmet>
+      </HelmetProvider>
       <MenuBar />
       {children}
       <Footer />
