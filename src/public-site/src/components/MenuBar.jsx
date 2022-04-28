@@ -26,11 +26,13 @@ function MenuBar() {
       {/* <a className="nav-link active" href={x.href}>
         {x.text}
       </a> */}
-      <Link to={x.href}>{x.text}</Link>
+      <Link to={x.href} className="nav-link active">
+        {x.text}
+      </Link>
     </li>
   ));
   return (
-    <div className="row menubarparent">
+    <div id="menubarparent" className="row">
       <nav
         id="menubar"
         className="navbar navbar-expand-lg navbar-light bg-light"
