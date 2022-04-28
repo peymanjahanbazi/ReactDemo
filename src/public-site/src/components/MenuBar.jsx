@@ -35,8 +35,8 @@ function MenuBar() {
         className="navbar navbar-expand-lg navbar-light bg-light"
       >
         <div className="container-fluid">
-          <a className="navbar-brand" href="#">
-            <img src={logo} className="imglogo" />
+          <a className="navbar-brand" href="/">
+            <img src={logo} alt="logo" className="imglogo" />
           </a>
           <button
             className="navbar-toggler"
@@ -61,9 +61,9 @@ function MenuBar() {
                 </Link>
               </li>
               <li className="nav-item">
-                <a className=" registerLink nav-link" href="#">
+                <Link className=" registerLink nav-link" to="/register">
                   Register
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
