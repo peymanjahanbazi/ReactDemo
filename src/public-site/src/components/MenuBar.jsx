@@ -1,7 +1,10 @@
 import "./MenuBar.scss";
 import logo from "./logo.svg";
+import userlogo from "./userlogo.svg";
+import showMoreUser from "./showMoreUser.svg";
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import store from "../store/configureStore";
 
 function MenuBar() {
   let [collapsed, setCollapsed] = useState("");
@@ -28,6 +31,40 @@ function MenuBar() {
       </Link>
     </li>
   ));
+
+  let rightMenu = null;
+  let user = store.getState().auth.user;
+  if (user === null || user === undefined) {
+    rightMenu = (
+      <ul className="navbar-nav">
+        <li className="nav-item">
+          <Link className=" loginLink nav-link" to="/login">
+            Login
+          </Link>
+        </li>
+        <li className="nav-item">
+          <Link className=" registerLink nav-link" to="/register">
+            Register
+          </Link>
+        </li>
+      </ul>
+    );
+  } else {
+    rightMenu = (
+      <ul className="navbar-nav">
+        <li className="nav-item">
+          <img src={userlogo} alt="user logo" className="imguserlogo" />
+          <span>{user.name}</span>
+          <img
+            src={showMoreUser}
+            alt="sow more user"
+            className="imgusershowMore"
+          />
+        </li>
+      </ul>
+    );
+  }
+
   return (
     <div id="menubarparent" className="row">
       <nav
@@ -54,18 +91,7 @@ function MenuBar() {
             <ul className=" menuitems navbar-nav me-auto mb-2 mb-lg-0">
               {menuItemsHtml}
             </ul>
-            <ul className="navbar-nav">
-              <li className="nav-item">
-                <Link className=" loginLink nav-link" to="/login">
-                  Login
-                </Link>
-              </li>
-              <li className="nav-item">
-                <Link className=" registerLink nav-link" to="/register">
-                  Register
-                </Link>
-              </li>
-            </ul>
+            {rightMenu}
           </div>
         </div>
       </nav>

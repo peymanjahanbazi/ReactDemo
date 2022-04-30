@@ -7,7 +7,7 @@ import invalidUserImg from "./invalidUser.svg";
 import "./Login.scss";
 import Main from "./templates/Main";
 
-function Login() {
+function ForgetPassword() {
   const VALID_USERNAME = "0999999";
   const VALID_PASSWORD = "123";
   let [mobile, setMobile] = useState(VALID_USERNAME);
@@ -48,7 +48,7 @@ function Login() {
   return (
     <Main title="Login">
       <div className="loginBox">
-        <div className="title">Login</div>
+        <div className="title">Recover your password</div>
         <div className="cellphone">
           <div className="cellphone-title">mobile</div>
           <div>
@@ -65,32 +65,12 @@ function Login() {
             />
           </div>
         </div>
-        <div className="cellphone passbox">
-          <div className="cellphone-title">password</div>
-          <div>
-            <input
-              className="textbox"
-              type="password"
-              name="mobile"
-              id="mobile"
-              value={pass}
-              onChange={(e) => {
-                setPass(e.target.value);
-                setInvalidUser(false);
-              }}
-            />
-          </div>
-        </div>
-        {invalidUserHtml}
-        <div className="cellphone forgetpassword">
-          <Link to="/ForgetPassword"> I forget my password</Link>
-        </div>
         <div className="cellphone loginbutton" onClick={handleClick}>
-          Login
+          Send Code
         </div>
       </div>
     </Main>
   );
 }
 
-export default Login;
+export default ForgetPassword;

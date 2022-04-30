@@ -8,8 +8,8 @@ import AboutUs from "./pages/AboutUs";
 import FAQ from "./pages/FAQ";
 import CreateAccount from "./pages/CreateAccount";
 import Login from "./pages/Login";
-import LoginCode from "./pages/LoginCode";
 import WhatIsId from "./pages/WhatIsId";
+import ForgetPassword from "./pages/ForgetPassword";
 
 function App() {
   return (
@@ -21,7 +21,7 @@ function App() {
           <Route path="/whatisid" element={<WhatIsId />} />
           <Route path="/faq" element={<FAQ />} />
           <Route path="/login" element={<Login />} />
-          <Route path="/loginCode" element={<LoginCode />} />
+          <Route path="/ForgetPassword" element={<ForgetPassword />} />
           <Route path="/register" element={<CreateAccount />} />
         </Routes>
       </BrowserRouter>
