@@ -1,5 +1,5 @@
-import UserMenu from "../components/UserMenu";
 import Main from "./templates/Main";
+import UserMenu from "./web-parts/UserMenu";
 
 function Home() {
   return (

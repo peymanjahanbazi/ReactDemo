@@ -1,11 +1,11 @@
 import { Helmet, HelmetProvider } from "react-helmet-async";
 
-import Footer from "../../components/Footer";
-import MenuBar from "../../components/MenuBar";
+import Footer from "../web-parts/Footer";
+import MenuBar from "../web-parts/MenuBar";
 
 function Main({ children, title }) {
   return (
-    <div className="container">
+    <>
       <HelmetProvider>
         <Helmet>
           <title>{title ? title : "No title"}</title>
@@ -14,7 +14,7 @@ function Main({ children, title }) {
       <MenuBar />
       {children}
       <Footer />
-    </div>
+    </>
   );
 }
 

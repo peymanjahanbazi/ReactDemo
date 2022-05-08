@@ -4,7 +4,7 @@ import userlogo from "./userlogo.svg";
 import showMoreUser from "./showMoreUser.svg";
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import store from "../store/configureStore";
+import store from "../../store/configureStore";
 
 function MenuBar() {
   let [collapsed, setCollapsed] = useState("");
@@ -66,7 +66,7 @@ function MenuBar() {
   }
 
   return (
-    <div id="menubarparent" className="row">
+    <div id="menubarparent" className="container">
       <nav
         id="menubar"
         className="navbar navbar-expand-lg navbar-light bg-light"
