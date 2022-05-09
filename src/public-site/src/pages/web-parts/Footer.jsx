@@ -6,6 +6,13 @@ import img02 from "./footer-img02.svg";
 import aparat from "./footer-aparat.svg";
 import instagram from "./footer-instagram.svg";
 import twitter from "./footer-twitter.svg";
+import {
+  URL_ABOUT,
+  URL_CONTACT,
+  URL_FAQ,
+  URL_HOME,
+  URL_WHAT_IS_ID,
+} from "../../urls";
 
 function Footer() {
   return (
@@ -18,13 +25,13 @@ function Footer() {
             </div>
             <div className="row">
               <div className="col-md-6">
-                {FooterLinks("Home", "/")}
-                {FooterLinks("What is ID", "/whatisid")}
+                {FooterLinks("Home", URL_HOME)}
+                {FooterLinks("What is ID", URL_WHAT_IS_ID)}
               </div>
               <div className="col-md-6">
-                {FooterLinks("About us", "/about")}
-                {FooterLinks("Contact us", "/contact")}
-                {FooterLinks("FAQ", "/faq")}
+                {FooterLinks("About us", URL_ABOUT)}
+                {FooterLinks("Contact us", URL_CONTACT)}
+                {FooterLinks("FAQ", URL_FAQ)}
               </div>
             </div>
           </div>

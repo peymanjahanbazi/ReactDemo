@@ -1,0 +1,9 @@
+const prefix = "";
+export const URL_HOME = `${prefix}/`;
+export const URL_WHAT_IS_ID = `${prefix}/whatisid`;
+export const URL_ABOUT = `${prefix}/about`;
+export const URL_CONTACT = `${prefix}/contact`;
+export const URL_FAQ = `${prefix}/faq`;
+export const URL_LOGIN = `${prefix}/faq`;
+export const URL_FORGET_PASSWORD = `${prefix}/faq`;
+export const URL_REGISTER = `${prefix}/faq`;

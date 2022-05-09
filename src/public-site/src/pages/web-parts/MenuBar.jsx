@@ -5,6 +5,15 @@ import showMoreUser from "./showMoreUser.svg";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import store from "../../store/configureStore";
+import {
+  URL_ABOUT,
+  URL_CONTACT,
+  URL_FAQ,
+  URL_HOME,
+  URL_LOGIN,
+  URL_REGISTER,
+  URL_WHAT_IS_ID,
+} from "../../urls";
 
 function MenuBar() {
   let [collapsed, setCollapsed] = useState("");
@@ -18,11 +27,11 @@ function MenuBar() {
   };
   const className = `collapse navbar-collapse ${collapsed}`;
   const menyItems = [
-    { text: "Home", href: "/" },
-    { text: "What is ID", href: "/whatisid" },
-    { text: "About us", href: "/about" },
-    { text: "Contact us", href: "/contact" },
-    { text: "FAQ", href: "/faq" },
+    { text: "Home", href: URL_HOME },
+    { text: "What is ID", href: URL_WHAT_IS_ID },
+    { text: "About us", href: URL_ABOUT },
+    { text: "Contact us", href: URL_CONTACT },
+    { text: "FAQ", href: URL_FAQ },
   ];
   const menuItemsHtml = menyItems.map((x) => (
     <li key={x.text} className="nav-item">
@@ -38,12 +47,12 @@ function MenuBar() {
     rightMenu = (
       <ul className="navbar-nav">
         <li className="nav-item">
-          <Link className=" loginLink nav-link" to="/login">
+          <Link className=" loginLink nav-link" to={URL_LOGIN}>
             Login
           </Link>
         </li>
         <li className="nav-item">
-          <Link className=" registerLink nav-link" to="/register">
+          <Link className=" registerLink nav-link" to={URL_REGISTER}>
             Register
           </Link>
         </li>
