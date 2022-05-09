@@ -8,35 +8,42 @@
     width: 138px;
     height: 30px;
     margin-top: 57px;
-    // margin-left: 199px;
-  }
-  .footer-image {
-    width: 64px;
-    height: 59.79px;
-  }
-  .image-border {
-    margin-top: 32px;
-    width: 80px;
-    height: 80px;
-    padding: 10px;
-    display: inline-block;
-    border: 1px solid #dee3e8;
-    border-radius: 12px;
-    margin-left: 18px;
   }
 
-  .top-images {
-    text-align: right;
+  .footerlink {
+    font-family: "Dana";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 21px;
+    color: #797979;
+    text-align: left;
   }
+
+  .legal-images-box {
+    text-align: right;
+    .image-border {
+      margin-top: 32px;
+      width: 80px;
+      height: 80px;
+      padding: 10px;
+      display: inline-block;
+      border: 1px solid #dee3e8;
+      border-radius: 12px;
+      margin-left: 18px;
+      .legal-image {
+        width: 64px;
+        height: 59.79px;
+      }
+    }
+  }
+
   .followus {
     text-align: left;
     margin-top: 39px;
     margin-bottom: 24px;
   }
 
-  .footerlinks {
-    margin-top: 64px;
-  }
   .social-media-parent {
     text-align: left;
     margin-bottom: 64px;
@@ -55,15 +62,6 @@
     }
   }
 
-  .footerlink {
-    font-family: "Dana";
-    font-style: normal;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 21px;
-    color: #797979;
-    text-align: left;
-  }
   .copyright {
     border-top: 2px solid #ffffff;
     padding: 16px;

@@ -18,44 +18,24 @@ function Footer() {
             </div>
             <div className="row">
               <div className="col-md-6">
-                <div>
-                  <Link className="footerlink nav-link" to="/">
-                    Home
-                  </Link>
-                </div>
-                <div>
-                  <Link className="footerlink nav-link" to="/whatisid">
-                    What is ID
-                  </Link>
-                </div>
+                {FooterLinks("Home", "/")}
+                {FooterLinks("What is ID", "/whatisid")}
               </div>
               <div className="col-md-6">
-                <div>
-                  <Link className="footerlink nav-link" to="/about">
-                    About us
-                  </Link>
-                </div>
-                <div>
-                  <Link className="footerlink nav-link" to="/contact">
-                    Contact us
-                  </Link>
-                </div>
-                <div>
-                  <Link className="footerlink nav-link" to="/faq">
-                    FAQ
-                  </Link>
-                </div>
+                {FooterLinks("About us", "/about")}
+                {FooterLinks("Contact us", "/contact")}
+                {FooterLinks("FAQ", "/faq")}
               </div>
             </div>
           </div>
           <div className="col-md-6">
             <div className="row">
-              <div className="col-12 top-images">
+              <div className="col-12 legal-images-box">
                 <span className="image-border">
-                  <img className="footer-image" src={img01} alt="nemad" />
+                  <img className="legal-image" src={img01} alt="nemad" />
                 </span>
                 <span className="image-border">
-                  <img className="footer-image" src={img02} alt="melli" />
+                  <img className="legal-image" src={img02} alt="melli" />
                 </span>
               </div>
               <div className="col-12 followus">
@@ -95,3 +75,13 @@ function Footer() {
 }
 
 export default Footer;
+
+function FooterLinks(text, target) {
+  return (
+    <div>
+      <Link className="footerlink nav-link" to={target}>
+        {text}
+      </Link>
+    </div>
+  );
+}
