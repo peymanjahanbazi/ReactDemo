@@ -1,0 +1,130 @@
+.home {
+  .text-block {
+    margin-top: 115px;
+    h1 {
+      margin-bottom: 24px;
+    }
+    p {
+      text-align: left;
+    }
+  }
+  .images-parent {
+    margin-top: 63px;
+    display: inline-block;
+    position: relative;
+
+    .top-image {
+      width: 250px;
+      height: 511px;
+      background: #ffffff;
+      border: 1px solid #797979;
+      border-radius: 32px;
+    }
+    .instagram {
+      position: absolute;
+      left: 273px;
+      top: 27px;
+      width: 54px;
+      height: 54px;
+    }
+    .facebook {
+      position: absolute;
+      left: 224px;
+      top: 254px;
+      z-index: -1;
+      width: 54px;
+      height: 54px;
+    }
+    .whatsapp {
+      position: absolute;
+      left: 279px;
+      bottom: 0;
+      width: 54px;
+      height: 54px;
+    }
+    .telegram {
+      position: absolute;
+      left: -122px;
+      top: 62px;
+      width: 54px;
+      height: 54px;
+    }
+    .youtube {
+      position: absolute;
+      left: -66px;
+      top: 210px;
+      width: 54px;
+      height: 54px;
+    }
+    .linkedin {
+      position: absolute;
+      left: -124px;
+      top: 360px;
+      width: 54px;
+      height: 54px;
+    }
+    .linkbox {
+      display: inline;
+      position: absolute;
+      top: 437px;
+      right: 169px;
+      background: #ffffff;
+      box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+      border-radius: 12px;
+      padding: 15px 23px;
+      white-space: nowrap;
+    }
+  }
+  .linksimages {
+    margin-top: 105px;
+    margin-bottom: 100px;
+    h2 {
+      text-align: left;
+    }
+    .image-container {
+      position: relative;
+      height: 450px;
+      //   background-color: #ff2356;
+
+      .orange-div {
+        background: #ff8162;
+        position: absolute;
+        left: 0;
+        right: 0;
+        height: 110px;
+        bottom: 68px;
+        z-index: -1;
+        .button-right {
+          position: absolute;
+          right: 43px;
+          width: 30px;
+          height: 30px;
+          top: 40px;
+          background: #ffffff;
+          box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+          border-radius: 6px;
+          //   background-color: green;
+        }
+        .button-left {
+          position: absolute;
+          left: 43px;
+          width: 30px;
+          height: 30px;
+          top: 40px;
+          background: #ffffff;
+          box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+          border-radius: 6px;
+          //   background-color: green;
+        }
+      }
+      .link-image {
+        margin-top: 80px;
+        width: 224px;
+        height: 370px;
+        background: #ffffff;
+        border-radius: 12px;
+        margin-right: 24px;
+      }
+    }
+  }
+}
